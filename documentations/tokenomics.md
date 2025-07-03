@@ -1,3 +1,12 @@
+---
+title: "TOKENOMICS🪙"
+description: "Tìm hiểu về hệ thống token và kinh tế game"
+date: "2024-01-16"
+category: "tokenomics"
+order: 1
+tags: ["token", "kinh tế", "game"]
+---
+
 <h1 style="text-align:center; color:#F4A460;">TOKENOMICS🪙</h1>
 
 #### 1.  Các loại token
@@ -18,6 +27,7 @@
 | ARCH | Bán NFT / item cho người chơi khác | Marketplace nội bộ |
 | DREAM | Tham gia sự kiện lớn | Rất hiếm |
 | DREAM | Stake ARCH lâu dài | Yield farming đơn giản |
+
 - Cách tiêu token
 
 | Token | Dùng để làm gì | Mục tiêu |
@@ -78,4 +88,3 @@
 | **Marketplace** | Cho phép trade tự do giữa người chơi | Hạn chế developer can thiệp vào giá |
 
 > 🔒 Giới hạn số lượng NFT theo mùa hoặc theo khu vực bản đồ (ví dụ: chỉ có 1.000 lô đất ở Khu Rừng Mơ).
->
