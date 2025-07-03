@@ -56,7 +56,7 @@ export async function getAllDocs(): Promise<Doc[]> {
     }
   })
 
-  return allDocsData.sort((a, b) => a.order - b.order)
+  return allDocsData.sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
 }
 
 export async function getDocBySlug(slug: string): Promise<Doc | null> {
@@ -119,7 +119,7 @@ export async function getCategories(): Promise<Category[]> {
       name: categoryName.charAt(0).toUpperCase() + categoryName.slice(1),
       slug: categoryName,
       description: getCategoryDescription(categoryName),
-      docs: docs.sort((a, b) => a.order - b.order),
+      docs: docs.sort((a, b) => (a.order ?? 0) - (b.order ?? 0)),
     })
   })
 
@@ -138,5 +138,5 @@ function getCategoryDescription(category: string): string {
 
 export async function getDocsByCategory(category: string): Promise<Doc[]> {
   const docs = await getAllDocs()
-  return docs.filter((doc) => doc.category === category).sort((a, b) => a.order - b.order)
+  return docs.filter((doc) => doc.category === category).sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
 }
