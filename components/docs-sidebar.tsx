@@ -41,7 +41,7 @@ export function DocsSidebar({ categories, className }: DocsSidebarProps) {
                   : "text-gray-300 hover:bg-gray-800 hover:text-gray-100",
               )}
             >
-              Tổng quan
+              Introduction
             </Link>
           </div>
         </div>

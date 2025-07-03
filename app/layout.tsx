@@ -7,8 +7,8 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Myth of Dreams - Home",
-  description: "abc",
+  title: "Myth of Dreams | Home",
+  description: "The landing page for Myth of Dreams, an NFT game, where you can explore, play, and earn.",
 }
 
 export default function RootLayout({

@@ -1,13 +1,11 @@
 ---
-title: "TOKENOMICS🪙"
-description: "Tìm hiểu về hệ thống token và kinh tế game"
+title: "Tokenomic"
+description: "Mô tả về hệ thống token và kinh tế game"
 date: "2024-01-16"
-category: "tokenomics"
-order: 1
-tags: ["token", "kinh tế", "game"]
+category: "business"
+order: 2
+tags: ["token", "kinh tế", "gameplay"]
 ---
-
-<h1 style="text-align:center; color:#F4A460;">TOKENOMICS🪙</h1>
 
 #### 1.  Các loại token
 
@@ -41,7 +39,7 @@ tags: ["token", "kinh tế", "game"]
 | DREAM | Stake để nhận phần trăm reward | Hạn chế bán tháo |
 | DREAM | Trả phí fusion / breeding NFT | Tạo NFT cấp cao, burn token |
 
-#### 3.   Phân bổ token `DREAM` ( Governance )
+#### 3.   Phân bổ token `$DREAM` ( Governance )
 
 🔸 Tổng cung: **1.000.000.000 DREAM** (cố định)
 

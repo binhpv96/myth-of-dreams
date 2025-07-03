@@ -56,7 +56,7 @@ export default async function BlogdocPage({ params }: BlogdocPageProps) {
         {/* Breadcrumb */}
         <div className="mb-8 flex items-center space-x-2 text-sm text-gray-500">
           <Link href="/docs" className="hover:text-teal-400 transition-colors">
-            Tài liệu
+            Docs
           </Link>
           {currentCategory && (
             <>
@@ -79,7 +79,7 @@ export default async function BlogdocPage({ params }: BlogdocPageProps) {
             </div>
             <div className="flex items-center space-x-2">
               <Clock className="h-4 w-4" />
-              <span>{doc.readTime} phút đọc</span>
+              <span>{doc.readTime} minutes</span>
             </div>
             {doc.tags && doc.tags.length > 0 && (
               <div className="flex space-x-2">
@@ -192,7 +192,7 @@ export default async function BlogdocPage({ params }: BlogdocPageProps) {
               >
                 <ArrowLeft className="h-4 w-4 text-gray-400" />
                 <div className="text-left">
-                  <div className="text-sm text-gray-500">Trước</div>
+                  <div className="text-sm text-gray-500">Before</div>
                   <div className="font-medium text-gray-200">{prevDoc.title}</div>
                 </div>
               </Link>
@@ -206,7 +206,7 @@ export default async function BlogdocPage({ params }: BlogdocPageProps) {
                 className="flex items-center space-x-3 rounded-lg border border-gray-800 bg-gray-900 px-6 py-4 transition-colors hover:border-gray-700 hover:bg-gray-800"
               >
                 <div className="text-right">
-                  <div className="text-sm text-gray-500">Tiếp theo</div>
+                  <div className="text-sm text-gray-500">Next</div>
                   <div className="font-medium text-gray-200">{nextDoc.title}</div>
                 </div>
                 <ArrowRight className="h-4 w-4 text-gray-400" />

@@ -4,7 +4,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import { Search, User, Globe, Menu, X, Settings, FileText, Home, Shield } from "lucide-react"
+import { Search, User, Globe, Menu, X, Settings, FileText, Home } from "lucide-react"
 import { Input } from "@/components/ui/input"
 
 export function GlobalHeader() {
@@ -25,13 +25,6 @@ export function GlobalHeader() {
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center space-x-8 md:flex">
-            <Link
-              href="/"
-              className="flex items-center space-x-2 text-sm font-medium text-gray-300 transition-colors hover:text-teal-400"
-            >
-              <Home className="h-4 w-4" />
-              <span>Home</span>
-            </Link>
             <Link
               href="/docs"
               className="flex items-center space-x-2 text-sm font-medium text-gray-300 transition-colors hover:text-teal-400"

@@ -10,15 +10,14 @@ export default async function DocsHomePage() {
     <div className="px-8 py-12">
       {/* Breadcrumb */}
       <div className="mb-8 flex items-center space-x-2 text-sm text-gray-500">
-        <span>Tài liệu</span>
+        <span>Docs</span>
       </div>
 
       {/* Header */}
       <div className="mb-12 space-y-4">
-        <h1 className="text-5xl font-bold tracking-tight text-gray-100">Tài liệu</h1>
+        <h1 className="text-5xl font-bold tracking-tight text-gray-100">Documentation Categories</h1>
         <p className="text-xl text-gray-400 max-w-3xl leading-relaxed">
-          Khám phá tài liệu hướng dẫn và thông tin chi tiết về dự án của chúng tôi. Tìm hiểu cách sử dụng, tích hợp và
-          tối ưu hóa sản phẩm.
+          The documentation is organized into categories to help you find the information you need quickly.
         </p>
       </div>
 
@@ -51,12 +50,12 @@ export default async function DocsHomePage() {
                   )}
                   <div className="flex items-center space-x-2 text-xs text-gray-500">
                     <Clock className="h-3 w-3" />
-                    <span>{doc.readTime} phút đọc</span>
+                    <span>{doc.readTime} minutes</span>
                   </div>
                 </Link>
               ))}
               {category.docs.length > 3 && (
-                <div className="px-4 text-sm text-gray-500">+{category.docs.length - 3} tài liệu khác</div>
+                <div className="px-4 text-sm text-gray-500">+{category.docs.length - 3}</div>
               )}
             </CardContent>
           </Card>

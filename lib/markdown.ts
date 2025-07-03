@@ -129,10 +129,9 @@ export async function getCategories(): Promise<Category[]> {
 function getCategoryDescription(category: string): string {
   const descriptions: Record<string, string> = {
     general: "Tài liệu tổng quan và hướng dẫn cơ bản",
-    tokenomics: "Thông tin về token và kinh tế game",
-    gameplay: "Hướng dẫn chơi game và tính năng",
     api: "Tài liệu API và tích hợp",
-    tutorial: "Hướng dẫn từng bước chi tiết",
+    tutorial: "Hướng dẫn chơi game và tính năng",
+    business: "Thông tin về mô hình kinh tế",
   }
   return descriptions[category] || "Tài liệu chuyên môn"
 }

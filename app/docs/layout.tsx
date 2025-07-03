@@ -1,6 +1,12 @@
 import type React from "react"
+import type { Metadata } from "next"
 import { DocsSidebar } from "@/components/docs-sidebar"
 import { getCategories } from "@/lib/markdown"
+
+export const metadata: Metadata = {
+title:"Myth of Dream | Docs",
+description: "Documentation for Myth of Dreams",
+}
 
 export default async function DocsLayout({
   children,

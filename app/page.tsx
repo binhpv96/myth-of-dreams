@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Play, Download, Users, Trophy, Gamepad2, Star, ArrowRight, Shield, Zap, Globe } from "lucide-react"
+import { Play, Download, Users, Trophy, Gamepad2, ArrowRight, Shield, Zap, Globe } from "lucide-react"
 
 export default function HomePage() {
   return (
