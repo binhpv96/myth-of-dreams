@@ -1,13 +1,20 @@
-<h1 style="text-align:center; color:#F4A460;">TOKENOMICS🪙</h1>
+---
+title: "Tokenomic"
+description: "Mô tả về hệ thống token và kinh tế game"
+date: "2024-01-16"
+category: "business"
+order: 2
+tags: ["token", "kinh tế", "gameplay"]
+---
 
-#### 1.  Các loại token
+### 1. Các loại token
 
 | Tên | Vai trò | Loại | Lưu ý |
 | --- | --- | --- | --- |
 | **ARCH** | Token phần thưởng chính, earn được từ game | In-game utility token | Không giới hạn tổng cung, có cơ chế **burn** |
 | **DREAM** | Token quản trị & cao cấp (giới hạn cung) | Governance token | Có tổng cung cố định, dùng để mở khóa item hiếm, staking, vote DAO |
 
-#### 2.   Cơ chế kiếm & tiêu token
+### 2. Cơ chế kiếm & tiêu token
 
 - Cách kiếm token
 
@@ -18,6 +25,7 @@
 | ARCH | Bán NFT / item cho người chơi khác | Marketplace nội bộ |
 | DREAM | Tham gia sự kiện lớn | Rất hiếm |
 | DREAM | Stake ARCH lâu dài | Yield farming đơn giản |
+
 - Cách tiêu token
 
 | Token | Dùng để làm gì | Mục tiêu |
@@ -31,7 +39,7 @@
 | DREAM | Stake để nhận phần trăm reward | Hạn chế bán tháo |
 | DREAM | Trả phí fusion / breeding NFT | Tạo NFT cấp cao, burn token |
 
-#### 3.   Phân bổ token `DREAM` ( Governance )
+### 3. Phân bổ token `$DREAM`
 
 🔸 Tổng cung: **1.000.000.000 DREAM** (cố định)
 
@@ -45,7 +53,7 @@
 | Quỹ DAO / Treasury | 10% | Quản lý cộng đồng sau này. Dùng cho sự kiện, vote, grant |
 | Liquidity Pool (DEX/CEX) | 5% | Tạo thanh khoản ban đầu |
 
-#### 4. Các loại NFT
+### 4. Các loại NFT
 
 | Loại NFT | Đặc điểm | Tính hiếm | Trade được? |
 | --- | --- | --- | --- |
@@ -56,7 +64,7 @@
 | **Giấc mơ ký ức (Dream Memory)** | Vật phẩm sưu tầm, không tạo lại được | Ultra Rare | ✅ |
 | **Nhân vật** | Kiến trúc sư, Thợ mơ, Cư dân... tăng năng suất |  |  |
 
-#### 5.  Cách tránh lạm phát NFT
+### 5.  Cách tránh lạm phát NFT
 
 | Giải pháp | Mô tả |
 | --- | --- |
@@ -68,7 +76,7 @@
 | **Không airdrop tự do** | Hạn chế đầu cơ và người farm nhiều tài khoản |
 | **Phần thưởng tăng dần theo chất lượng thành phố** | Ai chăm chơi mới earn nhiều, không phải cứ nạp là giàu |
 
-#### ⚙️ Cơ chế phát hành NFT:
+### 6 Cơ chế phát hành NFT:
 
 | Cách phát hành | Mô tả | Mục tiêu |
 | --- | --- | --- |
@@ -78,4 +86,3 @@
 | **Marketplace** | Cho phép trade tự do giữa người chơi | Hạn chế developer can thiệp vào giá |
 
 > 🔒 Giới hạn số lượng NFT theo mùa hoặc theo khu vực bản đồ (ví dụ: chỉ có 1.000 lô đất ở Khu Rừng Mơ).
->
