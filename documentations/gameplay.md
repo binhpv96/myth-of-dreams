@@ -19,25 +19,25 @@ tags: ["gameplay", "tutorial", "guide"]
 ### 2. Cơ chế "Giấc mơ hàng ngày"
 
 - Mỗi ngày, bạn “mơ” một giấc khác nhau → nhiệm vụ random → phần thưởng random.
-    - **Cốt truyện huyền ảo** + nhiệm vụ mini (giải đố, hành động, stealth, xây nhanh...)
-    - Một số item cực hiếm có thể xuất hiện chỉ trong những ngày đặc biệt (trăng tròn, sự kiện).
+- Cốt truyện huyền ảo + nhiệm vụ mini (giải đố, hành động, stealth, xây nhanh...)
+- Một số item cực hiếm có thể xuất hiện chỉ trong những ngày đặc biệt (trăng tròn, sự kiện).
 
-Gameplay thay đổi liên tục theo ngày → giữ chân người chơi → không chơi auto được
+→ Gameplay thay đổi liên tục theo ngày → giữ chân người chơi → không chơi auto được
 
-### 3. **Hệ thống phân nhánh “Sáng vs Tối”**
+### 3. Hệ thống phân nhánh “Sáng vs Tối”
 
 - Người chơi chọn “Hướng phát triển” dựa trên thời gian thực trong ngày:
-    - **Dream of Light**: thành phố yên bình, tập trung hồi phục, giao thương
-    - **Dream of Shadow**: phát triển sức mạnh, đánh chiếm, cướp tài nguyên
+- **_Dream of Light_**: thành phố yên bình, tập trung hồi phục, giao thương
+- **_Dream of Shadow_**: phát triển sức mạnh, đánh chiếm, cướp tài nguyên
 
 Mở khóa kiến trúc, nhân vật, skill riêng biệt → PvP/PvE hấp dẫn hơn
 
-### 4. **Thành phố NFT**
+### 4. Thành phố NFT
 
-- Mỗi công trình bạn xây dựng là **một NFT**:
-    - Có thể nâng cấp (dùng nguyên liệu/token)
-    - Có “output” sinh ra mỗi giờ (token, tài nguyên, vật phẩm)
-    - Một số NFT chỉ xuất hiện khi đủ mảnh, đủ điều kiện thời gian, hoặc trong sự kiện hiếm.
+- Mỗi công trình bạn xây dựng là một **NFT**:
+- Có thể nâng cấp (dùng nguyên liệu/token)
+- Có “output” sinh ra mỗi giờ (token, tài nguyên, vật phẩm)
+- Một số NFT chỉ xuất hiện khi đủ mảnh, đủ điều kiện thời gian, hoặc trong sự kiện hiếm.
 
 Tạo cảm giác “mình làm chủ – không ai giống ai” → tăng giá trị sưu tầm & sở hữu.
 

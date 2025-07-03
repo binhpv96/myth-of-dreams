@@ -5,7 +5,7 @@ date: "2025-07-03"
 tags: ["roadmap", "feature"]
 ---
 
-Must have
+### Must have
 
 | Tính năng | Mô tả |
 | --- | --- |
@@ -19,7 +19,7 @@ Must have
 | Smart Contract NFT | Metadata: ID, item cấu thành, điểm số |
 | Marketplace mini | Bán/mua công trình trong cộng đồng |
 
-- Should Have
+### Should Have
 
 | Tính năng | Mô tả |
 | --- | --- |
@@ -32,7 +32,7 @@ Must have
 | Cho thuê công trình NFT | Earn ARCH thụ động từ việc cho thuê |
 | Mini tutorial | Hướng dẫn người chơi mới làm quen luồng |
 
-- Nice to Have
+### Nice to Have
 
 | Tính năng | Mô tả |
 | --- | --- |
@@ -41,7 +41,7 @@ Must have
 | Mobile version | Sau khi PC ổn định thì xuất bản thêm mobile |
 | Sleep streak (chuỗi mơ liên tục) | Tăng phần thưởng nếu chơi hàng ngày không ngắt |
 
-- ✅ MVP Features
+### MVP Features
 
 | Tính năng | Mô tả |
 | --- | --- |

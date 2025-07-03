@@ -95,7 +95,7 @@ export default async function BlogdocPage({ params }: BlogdocPageProps) {
 
         {/* Content */}
         <div className="relative">
-          <div className="prose prose-lg prose-invert max-w-none prose-headings:scroll-mt-20 prose-headings:font-semibold prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-h4:text-xl prose-p:leading-8 prose-p:text-gray-300 prose-strong:text-gray-100 prose-code:text-teal-400 prose-code:bg-gray-900 prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-800">
+          <div className="prose prose-lg prose-invert max-w-none prose-headings:scroll-mt-20 prose-headings:font-semibold prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-h4:text-xl prose-p:leading-8 prose-p:text-gray-300 prose-strong:text-gray-100 prose-code:text-teal-400 prose-code:bg-gray-900 prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-800 prose-ul:text-gray-300 prose-ol:text-gray-300 prose-li:text-gray-300 prose-li:marker:text-teal-400">
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               rehypePlugins={[rehypeRaw]}
@@ -157,25 +157,47 @@ export default async function BlogdocPage({ params }: BlogdocPageProps) {
                   )
                 },
                 p: ({ children }) => <p className="mb-6 leading-8 text-gray-300">{children}</p>,
-                ul: ({ children }) => <ul className="mb-6 space-y-2 text-gray-300">{children}</ul>,
-                ol: ({ children }) => <ol className="mb-6 space-y-2 text-gray-300">{children}</ol>,
-                li: ({ children }) => <li className="leading-7">{children}</li>,
+                ul: ({ children }) => (
+                  <ul className="mb-6 space-y-3 text-gray-300 list-disc list-outside ml-6 marker:text-teal-400">
+                    {children}
+                  </ul>
+                ),
+                ol: ({ children }) => (
+                  <ol className="mb-6 space-y-3 text-gray-300 list-decimal list-outside ml-6 marker:text-teal-400 marker:font-semibold">
+                    {children}
+                  </ol>
+                ),
+                li: ({ children }) => <li className="leading-7 pl-2">{children}</li>,
                 blockquote: ({ children }) => (
                   <blockquote className="my-8 border-l-4 border-teal-500 bg-teal-500/5 pl-6 py-4 rounded-r-lg">
                     <div className="text-gray-200">{children}</div>
                   </blockquote>
                 ),
+                strong: ({ children }) => <strong className="font-bold text-gray-100">{children}</strong>,
+                em: ({ children }) => <em className="italic text-gray-200">{children}</em>,
                 code: ({ children, className }) => {
-                  if (className) {
+                  if (className?.includes("language-")) {
                     return (
-                      <code className="block bg-gray-900 border border-gray-800 rounded-lg p-4 text-sm text-gray-100 overflow-x-auto">
-                        {children}
-                      </code>
+                      <pre className="bg-gray-900 border border-gray-800 rounded-lg p-4 text-sm text-gray-100 overflow-x-auto my-6">
+                        <code className="text-gray-100">{children}</code>
+                      </pre>
                     )
                   }
                   return (
                     <code className="bg-gray-800 text-teal-400 px-2 py-1 rounded text-sm font-mono">{children}</code>
                   )
+                },
+                pre: ({ children }) => (
+                  <pre className="bg-gray-900 border border-gray-800 rounded-lg p-4 text-sm text-gray-100 overflow-x-auto my-6">
+                    {children}
+                  </pre>
+                ),
+                // Custom component for better emoji and special character handling
+                text: ({ children }) => {
+                  if (typeof children === "string") {
+                    return <span>{children}</span>
+                  }
+                  return children
                 },
               }}
             >

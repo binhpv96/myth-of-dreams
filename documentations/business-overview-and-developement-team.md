@@ -7,7 +7,7 @@ order: 1
 tags: ["roadmap", "business"]
 ---
 
-**MÔ HÌNH DOANH THU**
+### 1. MÔ HÌNH DOANH THU
 
 | Kênh | Mô tả |
 | --- | --- |
@@ -17,7 +17,7 @@ tags: ["roadmap", "business"]
 | Gọi vốn qua token (`$DREAM`) |  |
 | "Free start, expand to earn more” |  |
 
-**NHÂN SỰ**
+### 2. NHÂN SỰ
 
 | Vai trò | Số lượng | Mô tả chuyên môn |
 | --- | --- | --- |
@@ -31,12 +31,11 @@ tags: ["roadmap", "business"]
 | **Tester** |  |  |
 | **Maketing team** |  |  |
 
-**CẦN CHUẨN BỊ** 
+### 3. YÊU CẦU KỸ NĂNG
 
 | Vai trò | Yêu cầu |
 | --- | --- |
-| [CHƯA ĐẶT TÊN] | 🔥
-👉 Các kiến thức cơ bản liên quan tới Blockchain, NFT |
+| [CHƯA ĐẶT TÊN] | 🔥, Các kiến thức cơ bản liên quan tới Blockchain, NFT |
 | **Blockchain dev** | Solidity (Ethereum), Smart Contract, IPFS (Tốn phí), Chainlink, OpenZeppelin (https://www.openzeppelin.com/solidity-contracts), EIPS (Tìm hiểu về các hàm, event được định nghĩa của token), Estimated Gas Fees |
 | **Unity dev** | Kĩ năng liên quan tới Unity |
 | **Backend dev** | Thành thạo ít nhất 1 ngôn ngữ, framework, database, công nghệ dùng cho backend |
