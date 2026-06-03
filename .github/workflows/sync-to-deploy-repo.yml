@@ -23,6 +23,12 @@ jobs:
       - name: Push main to deploy repository
         env:
           DEPLOY_REPO_TOKEN: ${{ secrets.DEPLOY_REPO_TOKEN }}
+          DEPLOY_REPO: binhpv96/myth-of-dreams
         run: |
-          git remote add deploy https://x-access-token:${DEPLOY_REPO_TOKEN}@github.com/binhpv96/myth-of-dreams.git
+          if [ -z "$DEPLOY_REPO_TOKEN" ]; then
+            echo "DEPLOY_REPO_TOKEN is missing"
+            exit 1
+          fi
+
+          git remote add deploy https://x-access-token:${DEPLOY_REPO_TOKEN}@github.com/${DEPLOY_REPO}.git
           git push deploy main:main --force
