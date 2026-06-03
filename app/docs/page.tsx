@@ -7,7 +7,7 @@ export default async function DocsHomePage() {
   const categories = await getCategories()
 
   return (
-    <div className="px-8 py-12">
+    <div className="mx-auto max-w-4xl px-4 md:px-8 py-12">
       {/* Breadcrumb */}
       <div className="mb-8 flex items-center space-x-2 text-sm text-gray-500">
         <span>Docs</span>

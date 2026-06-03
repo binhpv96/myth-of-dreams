@@ -49,14 +49,14 @@ export async function getAllDocs(): Promise<Doc[]> {
       date: matterResult.data.date || new Date().toISOString(),
       description: matterResult.data.description || "",
       tags: matterResult.data.tags || [],
-      category: matterResult.data.category || "general",
+      category: matterResult.data.category || "overview",
       order: matterResult.data.order || 0,
       readTime,
       content: matterResult.content,
     }
   })
 
-  return allDocsData.sort((a, b) => a.order - b.order)
+  return allDocsData.sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
 }
 
 export async function getDocBySlug(slug: string): Promise<Doc | null> {
@@ -90,7 +90,7 @@ export async function getDocBySlug(slug: string): Promise<Doc | null> {
       date: matterResult.data.date || new Date().toISOString(),
       description: matterResult.data.description || "",
       tags: matterResult.data.tags || [],
-      category: matterResult.data.category || "general",
+      category: matterResult.data.category || "overview",
       order: matterResult.data.order || 0,
       readTime,
       content: matterResult.content,
@@ -106,7 +106,7 @@ export async function getCategories(): Promise<Category[]> {
   const categoryMap = new Map<string, Doc[]>()
 
   docs.forEach((doc) => {
-    const category = doc.category || "general"
+    const category = doc.category || "overview"
     if (!categoryMap.has(category)) {
       categoryMap.set(category, [])
     }
@@ -116,27 +116,46 @@ export async function getCategories(): Promise<Category[]> {
   const categories: Category[] = []
   categoryMap.forEach((docs, categoryName) => {
     categories.push({
-      name: categoryName.charAt(0).toUpperCase() + categoryName.slice(1),
+      name: getCategoryName(categoryName),
       slug: categoryName,
       description: getCategoryDescription(categoryName),
-      docs: docs.sort((a, b) => a.order - b.order),
+      docs: docs.sort((a, b) => (a.order ?? 0) - (b.order ?? 0)),
     })
   })
 
-  return categories.sort((a, b) => a.name.localeCompare(b.name))
+  const categoryOrder = ["overview", "game-design", "worldbuilding", "visual", "technical", "production"]
+  return categories.sort((a, b) => {
+    const indexA = categoryOrder.indexOf(a.slug)
+    const indexB = categoryOrder.indexOf(b.slug)
+    return (indexA !== -1 ? indexA : 99) - (indexB !== -1 ? indexB : 99)
+  })
+}
+
+function getCategoryName(category: string): string {
+  const names: Record<string, string> = {
+    "overview": "Tổng quan",
+    "game-design": "Game Design",
+    "worldbuilding": "Worldbuilding",
+    "technical": "Technical",
+    "visual": "Visual",
+    "production": "Production",
+  }
+  return names[category] || (category.charAt(0).toUpperCase() + category.slice(1))
 }
 
 function getCategoryDescription(category: string): string {
   const descriptions: Record<string, string> = {
-    general: "Tài liệu tổng quan và hướng dẫn cơ bản",
-    api: "Tài liệu API và tích hợp",
-    tutorial: "Hướng dẫn chơi game và tính năng",
-    business: "Thông tin về mô hình kinh tế",
+    "overview": "Tổng quan dự án, tầm nhìn và lộ trình phát triển",
+    "game-design": "Tài liệu thiết kế hệ thống, cơ chế gameplay",
+    "worldbuilding": "Cốt truyện, tiểu sử và xây dựng thế giới",
+    "technical": "Kiến trúc hệ thống, API, cơ sở dữ liệu",
+    "visual": "Định hướng nghệ thuật, phong cách UI/UX",
+    "production": "Quy trình, biểu mẫu và kế hoạch sản xuất",
   }
   return descriptions[category] || "Tài liệu chuyên môn"
 }
 
 export async function getDocsByCategory(category: string): Promise<Doc[]> {
   const docs = await getAllDocs()
-  return docs.filter((doc) => doc.category === category).sort((a, b) => a.order - b.order)
+  return docs.filter((doc) => doc.category === category).sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
 }

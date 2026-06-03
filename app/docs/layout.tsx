@@ -22,8 +22,8 @@ export default async function DocsLayout({
           <aside className="fixed top-16 z-30 hidden h-[calc(100vh-4rem)] w-72 shrink-0 border-r border-gray-800 bg-gray-950 md:block">
             <DocsSidebar categories={categories} />
           </aside>
-          <main className="flex-1 md:ml-72">
-            <div className="mx-auto max-w-4xl">{children}</div>
+          <main className="flex-1 md:ml-72 min-w-0">
+            {children}
           </main>
         </div>
       </div>
