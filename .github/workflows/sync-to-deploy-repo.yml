@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -31,4 +32,9 @@ jobs:
           fi
 
           git remote add deploy https://x-access-token:${DEPLOY_REPO_TOKEN}@github.com/${DEPLOY_REPO}.git
+
+          echo "Checking deploy repository access..."
+          git ls-remote deploy
+
+          echo "Pushing to deploy repository..."
           git push deploy main:main --force
